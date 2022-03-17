@@ -38,6 +38,7 @@ function showSection(element) {
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
   aside = document.querySelector(".aside");
+
 navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
 });
