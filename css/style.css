@@ -632,7 +632,6 @@ h3.my-profession {
 .portfolio .portfolio-heading {
   flex: 0 0 100%;
   max-width: 100%;
-
   margin-bottom: 40px;
 }
 
@@ -644,6 +643,7 @@ h3.my-profession {
 .portfolio .portfolio-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  /* width: 100px; */
   margin-bottom: 30px;
 }
 
@@ -654,10 +654,13 @@ h3.my-profession {
   cursor: pointer;
 }
 
+.portfolio .portfolio-item-inner .portfolio-img {
+}
+
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
-  /* height: 200px; */
-  display: block;
+  height: 300px;
+  object-fit: cover;
 }
 
 @media (max-width: 1199px) {
@@ -708,6 +711,13 @@ h3.my-profession {
   .home .home-img {
     display: none;
   }
+
+  .portfolio .portfolio-item-inner .portfolio-img img {
+    width: 100%;
+    height: 300px;
+    /* display: block; */
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -719,5 +729,9 @@ h3.my-profession {
   .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .portfolio .portfolio-item-inner .portfolio-img img {
+    object-fit: cover;
+    width: 100%;
   }
 }
